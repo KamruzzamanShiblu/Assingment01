@@ -54,18 +54,25 @@ display: inline-block;
 }
 /* banner style here */
 .banner-container{
+    Width:100%;
+    Height:335px;
     display: flex;
     justify-content: center;
     background-color: #F5F7FA;
-    Width:100%;
-    Height:335px;
+    padding: 0 20px;
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+
+  
     /* margin-left: 100px; */ 
 }
 
 .banner-text{
-width: 376px;
-height: 60px;
-padding:20px 30px;
+width: 60%;
+height: auto;
+/* height: 60px; */
+/* padding:20px 30px; */
 }
 
 .banner-text h1{
@@ -79,12 +86,13 @@ padding:20px 30px;
     margin-top: 30px;
 }
 .banner-Image{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     
 }
 .banner-Image img{
   width: 454px;
-  height:250px;
+  height:350px; 
+  /* height: auto; */
   margin-left: 100px;
   padding: 35px 40px;
 }
@@ -140,7 +148,7 @@ padding:20px 30px;
  display: inline-block;
  text-align: center;
  margin-left: 400px;
- margin-top: 70px;
+ margin-top: 70px; 
 
 }
 .power-text h1{
@@ -258,9 +266,10 @@ padding:20px 30px;
 /* section 05 helping bc style here */
 .help-section{
     width: 100%;
-    height: 180px;
+    height: auto;
     gap: 28px;
-    background-color: #F5F7FA;
+    /* background-color: #F5F7FA; */
+    /* margin-left: 100px; */
     margin-top: 80px;
     margin-bottom: 40px;
 }
@@ -268,7 +277,7 @@ padding:20px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    /* gap: 30px; */
 }
 .help-text{
     width: 284px;
@@ -342,8 +351,10 @@ color: #4D4D4D;
 
 /* future of bc style start here */
 .Blockchain-future{
-    /* width: 1005px;
-    height: 355px; */
+    width: 100%;
+    /* width: 1005px; */
+    /* height: 355px; */
+    height: auto;
 }
 .future-parent{
 display: flex;
@@ -356,8 +367,11 @@ align-items: center;
 margin-bottom: 100px;
 }
 .future-head{
-    margin-top: 150px;
-    /* margin-left: 200px; */
+    width: auto;
+    height: auto;
+    /* margin-top: 100px; */
+    margin: 0 auto;
+  
 }
 .future-head > h1{
     font-size: 24px;
@@ -374,8 +388,10 @@ margin-bottom: 100px;
 }
 .future-child-image{
     position: absolute;
-    /* margin: auto; */
-    padding-bottom: 0px;
+    margin: 0 auto;
+    gap: 0;
+    /* padding-bottom: 0px;
+    margin-bottom: 50px; */
     z-index: 1;
 }
 .future-child-image img{
@@ -543,43 +559,63 @@ margin-bottom: 100px;
 
 }
 
+
+
+
+/* responsive is here */
+
 @media screen and (max-width:600px) {
-    body{
-        margin: 0 auto;
+    .navber{
+     display: none;
     }
+    /* banner section */
    .banner-container{
     width: 100%;
-    height: 800px;
+    height: auto;
     box-sizing: border-box;
-    margin: 0 auto;
-     display: flex;
-     flex-direction: column-reverse;
-     /* gap: 0; */
-    /* background-color: #F5F7FA; */
+    margin: 0 50%;
+    /* margin-left: 40%;
+    margin-right: 60%; */
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+     justify-content: center;
      align-items: center;
-     
+     /* gap: 0; */
 
      
+    
+     
     }
-    .banner-Image {
+    .banner-Image{
         width: 100%;
         height: auto;
-        padding-top: 10px;
+        margin: 0 auto;
+        /* padding-top: 10px; */
         /* margin-bottom: 50px; */
-         margin-right: 100px;
-        flex-direction:column;
+       
+        /* flex-direction:column; */
         /* align-items: start; */
+    }
+    .banner-Image img{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
     }
     .banner-text{
         width: 100%;
         height: auto;
-     justify-content: center;
-     align-items: center;
-     height: 100px;
-     font-size: 9px;
-     margin-left: 100px;
-     padding-bottom: 50px;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+        /* margin-left: 100px; */
+        /* padding-bottom: 50px; */
     }
+   /* banner sectin end */
+   
+
+   /* client section start */
     .client-images{
         width: 100%;
         height: auto;
@@ -588,50 +624,112 @@ margin-bottom: 100px;
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
         align-items: center;
-        margin-bottom: 100px;
+        gap: 40px;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    .client-images img{
+        width: 100%;
+        height: auto;
+       align-items: center;
+      
+       
+
+    }
+    .client-text{
+        width: 100%;
+        height: auto;
+        margin-left: 50%;
+        margin-right: 50%;
+        text-align: center;
+        margin-bottom: 20px;
     }
     .power-container{
         width: 100%;
         height: auto;
         display: block;
         text-align: center;
-        margin: 0 auto;
+        margin-left: 70%;
+        margin-right: 30%;
+    }
+    .power-text{
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    .help-section{
+        /* width: 600px; */
+        /* width:100%;
+        height: auto;
+        align-items: center; */
+      
+        
     }
     .help-container{
+        width: 90%;
+        height: 480px;
         display: block;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
+        margin-left: 280px;
         text-align: center;
+        margin-bottom: 200px;
+        padding: 30px 0;
+        
+    }
+    .card-container{
+        width: 100%;
     }
     .help-image{
-        margin: 20px 5px;
+        margin: 30px 15px;
         display: block;
-        text-align: center;
-        margin: 0 auto;
+        /* text-align: center; */
+        /* margin: 30px auto; */
        
     }
     .help-text{
         text-align: center;
         margin: 0 auto;
     }
+    .Blockchain-future{
+        width: 100%;
+        height: auto;
+    }
     .future-head{
-        /* margin-top: 20px; */
-        height: auto auto;
+        width: 100%;
+        height:auto;
+       margin-left: 200px;
+        
     }
    .future-parent{
+    width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* margin:120px auto; */
-    height: auto auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+
+   }
+   
+   .z-index-both{
+    margin-bottom: 250px;
+    margin-right: 250px;
+   
    }
   .form{
+    width: 100%;
+    height: auto ;
     display: flex;
     flex-direction: column;
     margin-top: 200px;
-    height: auto ;
+    padding: 20px 0;
+    margin-left: 200px;
+    
   }
+  
   .footer-container{
-    display: block;
     width: 100%;
     height: auto;
+    display: block;
+    margin-left: 200px;
   }
 }
